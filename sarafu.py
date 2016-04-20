@@ -1,2 +1,2 @@
-def sarafu ();
+def sarafu ():
     print ("sarafu")
