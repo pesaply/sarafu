@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    scripts=['caravel/bin/caravel'],
+    scripts=['sarafu/bin/sarafu'],
     install_requires=[
         'alembic>=0.8.5, <0.9.0',
         'cryptography>=1.1.1, <2.0.0',
