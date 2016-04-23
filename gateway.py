@@ -5,10 +5,10 @@ try:
     from hashlib import sha1
 except ImportError:
     from sha import new as sha1
-    
-USD = 840
-RUR = 810
-UAH = 980
+TSH = 1000
+KSH = 100
+USH = 500
+USD = 2000
     
 RESPONSE_CODE_ACCEPTED = 1
 RESPONSE_CODE_DENIED = 2
