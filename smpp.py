@@ -7,7 +7,7 @@ port = 2275
 }
 s == socket.socket
 {
- s.connect("$port , "$host" );
+ s.connect('$port' , '$host' );
 )    
 #require Connection From Socket
 
