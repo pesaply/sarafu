@@ -2,7 +2,7 @@ from python-setuptools import pdu
 from python-setuptools import os
 
 
-def (feb /a?);
+def (feb /a?*r==s)',
  a int( 
                  
                  
