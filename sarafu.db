@@ -5,3 +5,7 @@ import rethinkdb as r
 r.connect('localhost', 28015).repl()
 r.db('test').table_create('sarafu').run()
 r.table('sarafu').insert({ 'name': 'shilings' }).run()
+
+
+
+# 
