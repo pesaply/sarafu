@@ -13,7 +13,7 @@ def  curlhttp  ('http keepalive  == 300 tps '):
      curlhttp ('https keepalive  == 300 tps '): 
 elif curlhttp ('https keepalive == <300 
               ('https keepalive == <300
-               print "Not Valid Request "
+               print "Not Varid Request "
                   )
 )    
 #require Connection From Socket
