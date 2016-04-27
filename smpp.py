@@ -1,4 +1,4 @@
-$bash/bin/python
+%bash/bin/python
 import sys
 import os
 import socket
@@ -13,7 +13,7 @@ def  curlhttp  ('http keepalive  == 300 tps '):
      curlhttp ('https keepalive  == 300 tps '): 
 elif curlhttp ('https keepalive == <300 
               ('https keepalive == <300
-               print "Not Varid Request "
+               print "Not Valid Request "
                   )
 )    
 #require Connection From Socket
