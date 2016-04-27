@@ -2,7 +2,7 @@ import imp, os
 from setuptools import setup, find_packages
 
 version = imp.load_source(
-    'version', os.path.join('sarafu', 'version.py'))
+    'version', os.path.join('sarafu', ))
 
 setup(
     name='sarafu',
