@@ -5,9 +5,8 @@ from setuptools import setup, find_packages
 setup(
     name='sarafu',
     description=(
-        "Payment Gateway and interactive data visualization platform build on Sarafu "
-        "and python"),
-    version=version.VERSION_STRING,
+        "Payment Gateway and interactive data visualization platform build on Sarafu "),
+   
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
