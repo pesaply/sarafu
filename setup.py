@@ -40,7 +40,7 @@ setup(
     author_email='jamiitech1@gmail.com',
     url='https://github.com/Hojalab/sarafu.git',
     download_url=(
-        'https://github.com/Hojalab/sarafu.git/' + version.VERSION_STRING),
+        'https://github.com/Hojalab/sarafu.git/' ),
     classifiers=[
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
