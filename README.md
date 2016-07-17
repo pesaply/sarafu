@@ -47,3 +47,16 @@ Tigo-pesa-payments
 
 
 Scraping data from SMS receipts may not be the cleanest solution for accepting mobile money payments, but sometimes it’s the only solution.
+ 
+ 
+ 
+Developer APIs provided by services like Stripe and PayPal make it easy for online services to accept payments via credit cards and bank accounts, but not via mobile money systems like M-Pesa. Some mobile money systems may offer their own APIs, while others don’t have developer APIs at all, or have APIs that are only available for large businesses.
+
+If you want to accept payments from a mobile money system and there’s no API available, you can scrape the SMS receipts. There are just three easy steps:
+
+    Forward SMS receipts from your phone to your server
+    Extract the relevant data from the SMS receipt
+    Match the payment with the correct user and credit their account
+
+
+
