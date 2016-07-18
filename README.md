@@ -1,6 +1,10 @@
 # sarafu
 Mobile Payment Gateway With API  For Various Telecom Provider ,
 
+Vodacom M-Pesa (Tanzania)
+Tigo Pesa (Tanzania)
+Safaricom M-Pesa (Kenya)
+
 #Dependencies
 
 
