@@ -178,7 +178,6 @@ def _escape(s, quote=False):
     Replace special characters "&", "<" and ">" to HTML-safe sequences.  If
     the optional flag `quote` is `True`, the quotation mark character (") is
     also translated.
-
     There is a special handling for `None` which escapes to an empty string.
 
     :param s: the string to escape.
