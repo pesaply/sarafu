@@ -37,9 +37,9 @@ setup(
     tests_require=['coverage'],
     author='Mark Francis',
     author_email='jamiitech1@gmail.com',
-    url='https://github.com/Hojalab/sarafu.git',
+    url='https://github.com/pesaply/sarafu.git',
     download_url=(
-        'https://github.com/Hojalab/sarafu.git/' ),
+        'https://github.com/pesaply/sarafu.git/' ),
     classifiers=[
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
