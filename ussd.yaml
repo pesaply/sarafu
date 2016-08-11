@@ -1,0 +1,34 @@
+from protorpc import messages
+
+# Trade type.
+class TradeType(messages.Enum):
+    BUY = 1
+    SELL = 2
+    SHORT = 3
+    CALL = 4
+
+class Lot(messages.Message):
+    price = messages.IntegerField(1, required=True)
+    quantity = messages.IntegerField(2, required=True)
+
+class Order(messages.Message):
+    symbol = messages.StringField(1, required=True)
+    total_quantity = messages.IntegerField(2, required=True)
+    trade_type = messages.EnumField(TradeType, 3, required=True)
+    lots = messages.MessageField(Lot, 4, repeated=True)
+    limit = messages.IntegerField(5)
+
+order = Order(symbol='GOOG',
+              total_quantity=10,
+              trade_type=TradeType.BUY)
+
+lot1 = Lot(price=304,
+           quantity=7)
+
+lot2 = Lot(price=305,
+           quantity=3)
+
+order.lots = [lot1, lot2]
+
+# Now object is initialized!
+order.check_initialized()
