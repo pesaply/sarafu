@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: sarafu
+Version: 0.0.0
+Summary: Payment Gateway and interactive data visualization platform build on Sarafu 
+Home-page: https://github.com/pesaply/sarafu.git
+Author: Mark Francis
+Author-email: jamiitech1@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/pesaply/sarafu.git/
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
