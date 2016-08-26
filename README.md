@@ -1,66 +1,43 @@
-# sarafu
-Mobile Payment Gateway With API  For Various Telecom Provider ,
+# Heroku Django Starter Template
 
-Vodacom M-Pesa (Tanzania)
-Tigo Pesa (Tanzania)
-Safaricom M-Pesa (Kenya)
+An utterly fantastic project starter template for Django 1.9.
 
-#Dependencies
+## Features
 
+- Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
+- Enhancements to Django's static file serving functionality via WhiteNoise
 
-sudo apt-get install subversion git bzr bzrtools python-pip postgresql postgresql-server-dev-9.3 python-all-dev python-dev python-setuptools libxml2-dev libxslt1-dev libevent-dev libsasl2-dev libldap2-dev pkg-config libtiff5-dev libjpeg8-dev libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev liblcms2-utils libwebp-dev tcl8.6-dev tk8.6-dev python-tk libyaml-dev fontconfig
+## How to Use
 
-#Database 
+To use this project, follow these steps:
 
-RethinkDB makes building and scaling realtime apps dramatically easier
+1. Create your working environment.
+2. Install Django (`$ pip install django`)
+3. Create a new project using this template
 
+## Creating Your Project
 
-Just Added New Fitures 
+Using this template to create a new Django app is easy::
 
-commit Changes in 5 10 15 
+    $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
 
+You can replace ``helloworld`` with your desired project name.
 
-[![Gitter](https://badges.gitter.im/Hojalab/sarafu.svg)](https://gitter.im/Hojalab/sarafu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+## Deployment to Heroku
 
+    $ git init
+    $ git add -A
+    $ git commit -m "Initial commit"
 
+    $ heroku create
+    $ git push heroku master
 
-To extract the amount received, we can use this regular expression:
+    $ heroku run python manage.py migrate
 
-Umepokea\W+Tsh\W*([\d\,\.]*\d)
+See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
 
-Note: You may also want to take special care to avoid letting someone falsify their payment amount by changing their registered name to “Umepokea Tsh 1,000,000”.
+## Further Reading
 
-To extract the transaction ID, we can use this regular expression:
-
-kumbukumbu no\W+(\w{8}\.\d{4}\.\w{5,}\b)
-
-While SMS receipt formats are typically relatively stable, mobile money systems sometimes change the format or wording of the receipts.
-
-At this point, your service still doesn’t know which user account should be credited for the payment. (You might be able to figure it out from the payee name and phone number, but that’s unreliable.)
-
-Instead, just store the transaction ID and payment amount in your database, so that it’s available in the next step.
-3. Match the payment with the correct user and credit their account
-
-Finally, you need to match the receipt with the correct user of your online service, so you can credit the correct account.
-
-Some mobile money systems, including Tigo Pesa, have systems for businesses that allow customers to enter a reference number for their account when sending a bill payment. But this type of bill payment system is sometimes only available to large businesses. When someone sends money to your phone number, they probably won’t be able to send a reference number.
-
-In this case, you can simply prompt the user to enter the transaction ID in your application, like in the example below:
-
-Tigo-pesa-payments
-
-
-Scraping data from SMS receipts may not be the cleanest solution for accepting mobile money payments, but sometimes it’s the only solution.
- 
- 
- 
-Developer APIs provided by services like Stripe and PayPal make it easy for online services to accept payments via credit cards and bank accounts, but not via mobile money systems like M-Pesa. Some mobile money systems may offer their own APIs, while others don’t have developer APIs at all, or have APIs that are only available for large businesses.
-
-If you want to accept payments from a mobile money system and there’s no API available, you can scrape the SMS receipts. There are just three easy steps:
-
-    Forward SMS receipts from your phone to your server
-    Extract the relevant data from the SMS receipt
-    Match the payment with the correct user and credit their account
-
-
-
+- [Gunicorn](https://warehouse.python.org/project/gunicorn/)
+- [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
+- [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
