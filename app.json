@@ -1,0 +1,23 @@
+{
+  "name": "sarafu",
+  "description": "Mobile Payment Gateway",
+  "scripts": {
+    "postdeploy": "bin/setup"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+    "binnacle",
+    "stream"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
